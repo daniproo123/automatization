@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Demo Project using Serenity and Cucumber</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="584f54ecaccf7da1c2b680a3ecdfd39ea10634ef1d7a0056a5a834aaa3b8ebf7.html">Estoy Realizando Una Prueba De Automatizaci&oacute;n Para La P&aacute;gina De Utest</a></span>
+                > <span class="truncate-60"><a
+                    href="95d6b7f260a8ddaf167eb419628ebaa1d21c718bf5e4755a5a5d73e1b23fa983.html">Completae la prueba de automatizaci&oacute;n en Utest </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-08-2022 07:39</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Estoy Realizando Una Prueba De Automatización Para La Página De Utest </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="e4ef4831a220e0a9cbdbfec794f5c31b3fef2adf1cb8126df1cc35a6f525969c.html">Scenario1
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="8e3b9bd5eba0a2d944ce7d2a73335e57289cd25f71e556e1618e946dc87d7ec9.html">Stories
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Completae la prueba de automatizaci&oacute;n en Utest
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="1b705f0911530d2f8be47cf91a250777bb5f3a0dd74b98c97f14657028099f3f.png" title=" Given Quiero completar la prueba tecnica de Choucair asociada a la automatizacion" width="1920"/>
+                <img src="1b705f0911530d2f8be47cf91a250777bb5f3a0dd74b98c97f14657028099f3f.png" title=" Brandon open up" width="1920"/>
+                <img src="1b705f0911530d2f8be47cf91a250777bb5f3a0dd74b98c97f14657028099f3f.png" title=" Brandon opens the U test page" width="1920"/>
+                <img src="1b705f0911530d2f8be47cf91a250777bb5f3a0dd74b98c97f14657028099f3f.png" title=" Brandon open up (completed)" width="1920"/>
+                <img src="897c58413d2ff97f0522c27ceaf08054375455b5eb892b25dab3894efe94627c.png" title=" Brandon login" width="1920"/>
+                <img src="897c58413d2ff97f0522c27ceaf08054375455b5eb892b25dab3894efe94627c.png" title=" Brandon clicks on button that shows us the form to login" width="1920"/>
+                <img src="a3bba7a06a54065bfe737a5199bb85c730436b1e8ae9ea8740b831405aa6e361.png" title=" Brandon enters 'Daniel' into Where do we write the frist name" width="1920"/>
+                <img src="4be76d6b52a568f7a201ec5653acf4108659dae8968e5fe1806235689653f4ae.png" title=" Brandon enters 'Zuleta' into Where do we write the last name" width="1920"/>
+                <img src="069302edb79fe75c5a424e0fc43ab93d8befc192efd107e8fdf75bacfdb2501f.png" title=" Brandon enters 'Danielzuleta2022@pruebados.com' into Where do we write the e-mail" width="1920"/>
+                <img src="d8b880ef348a349fe47be89aec27a4a240a15fa9b554187c2d0d0206a0e3933b.png" title=" Brandon select February on Where do we write the bird month" width="1920"/>
+                <img src="96d4d7445e99e143ebc7d68dd98449b72509fb2d2308215264ab93264424c040.png" title=" Brandon select 20 on Where do we write the bird month" width="1920"/>
+                <img src="9c1b3e5f42b48f8a4446de42e62c0d63f111f5cdebe986ae200db230b7869565.png" title=" Brandon select 2000 on Where do we write the bird month" width="1920"/>
+                <img src="d7d60469c073557bb5377c221f98e9b91e2c18c433208d60b785e739696c22c9.png" title=" Brandon clicks on Button for next page " width="1920"/>
+                <img src="e1bc8a2578c7ebf0287dda79de48936bf652b11eb7540d6a20e3887d2afce133.png" title=" Brandon enters '29902020' into Where do we write code postal" width="1920"/>
+                <img src="7441c7c5bde9482c5782ef8098328478554fbf5422ecb0ea64bdccac42b7feda.png" title=" Brandon clicks on SELECT SYSTEM OPERATIVE" width="1920"/>
+                <img src="213325a6a5664ccd18948eecce75f77ced62b1295964da62a986d6ba33d3b1b5.png" title=" Brandon clicks on SELECT SYSTEM OPERATIVE" width="1920"/>
+                <img src="cb2f5b04ed4e9f002b53f4df0c3a62522f696406d0d659dad2a0a96de6eaa1b1.png" title=" Brandon clicks on next page Three" width="1920"/>
+                <img src="ceab26f1603d5c419148064bf26d0e759768f546edef62b037f2339aaf93052c.png" title=" Brandon clicks on SELECT SYSTEM OPERATIVE" width="1920"/>
+                <img src="28646b21770bb69fe46e6ff6b68db95b1da881ee0a588560742b264280029682.png" title=" Brandon clicks on SELECT SYSTEM OPERATIVE" width="1920"/>
+                <img src="66fb45144fe1c48410bc7542ce7aed27b480527253d4deb66ee541cae7c0e1a8.png" title=" Brandon clicks on SELECT SYSTEM OPERATIVE" width="1920"/>
+                <img src="4e02e79b011c86f651ba341745296a2a90b1c0abc7128be92831ef43feeb0821.png" title=" Brandon clicks on SELECT SYSTEM OPERATIVE" width="1920"/>
+                <img src="6bc58b1605457ea8791d529bb1d31680f2e83ff83a468814b904f4c92982aaa4.png" title=" Brandon clicks on SELECT SYSTEM OPERATIVE" width="1920"/>
+                <img src="fc466c12f816fbaa335251aa7aa88f99fc9bdfe72caeee6d444ddd13bacc569a.png" title=" Brandon clicks on SELECT SYSTEM OPERATIVE" width="1920"/>
+                <img src="06721a97e965b2dce621240f09865223cd2a145d9c038a24553a1015623ae7bb.png" title=" Brandon clicks on SELECT SYSTEM OPERATIVE" width="1920"/>
+                <img src="b48d0006c98d425e95cd068ad15be10aebc34e1b9c65d23ef75bdd56e08a3505.png" title=" Brandon clicks on SELECT SYSTEM OPERATIVE" width="1920"/>
+                <img src="7bb995b086aee6b8821d4065cfdd80c3c3254ef8bc07e71185273b9f3c97c64d.png" title=" Brandon clicks on SELECT SYSTEM OPERATIVE" width="1920"/>
+                <img src="027790ec440d2ffedbdaf3a5a4d8e567ef4ca330761fb3d8f4447d5cae7f203f.png" title=" Brandon clicks on SELECT SYSTEM OPERATIVE" width="1920"/>
+                <img src="e7ede1c553b0310f66c89a626d6ee5cc8ae29a3e97888670539ce8fdca3925ec.png" title=" Brandon clicks on SELECT SYSTEM OPERATIVE" width="1920"/>
+                <img src="a9fe89bc22c66b1a8c7d9ddde4e5375746625c829ecfe2011ee29e0b47436239.png" title=" Brandon clicks on SELECT SYSTEM OPERATIVE" width="1920"/>
+                <img src="fb3ca36af6e44de4b0412bf48535ca37af85c4515e3d0209f6d26a8f1a071926.png" title=" Brandon clicks on next page Three" width="1920"/>
+                <img src="45b51780de94551b7c5c0a34bcb1188d5f8829f13e29fca4df06eee7c68744b6.png" title=" Brandon enters '#aAS3Okldlqw' into WRITE YOUR PASSWORD" width="1920"/>
+                <img src="549831f3967c9b22c4029a60ce873e6bef3a49c2ab66283a67a0cbda3461d986.png" title=" Brandon enters '#aAS3Okldlqw' into WRITE YOUR PASSWORD PASSWORD_CONFIRM" width="1920"/>
+                <img src="b43a087ec978046a99063955b33ed18e8d37692afa28fdc8af921542c0d7fe67.png" title=" Brandon clicks on WRITE YOUR PASSWORD PASSWORD_CONFIRM" width="1920"/>
+                <img src="51d978b4ff2acfdb2d725d841869edf48636785449873270a6a0977659c85388.png" title=" Brandon clicks on WRITE YOUR PASSWORD PASSWORD_CONFIRM" width="1920"/>
+                <img src="51d978b4ff2acfdb2d725d841869edf48636785449873270a6a0977659c85388.png" title=" Brandon login (completed)" width="1920"/>
+                <img src="51d978b4ff2acfdb2d725d841869edf48636785449873270a6a0977659c85388.png" title=" Given Quiero completar la prueba tecnica de Choucair asociada a la automatizacion (completed)" width="1920"/>
+                <img src="51d978b4ff2acfdb2d725d841869edf48636785449873270a6a0977659c85388.png" title=" When Busco ingresar datos relacionados al login en la pagina de Utest" width="1920"/>
+                <img src="51d978b4ff2acfdb2d725d841869edf48636785449873270a6a0977659c85388.png" title=" Then Rellena todos los datos sobre del formulario de registro, para completarlo de forma exitosa: <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.90</span>
+</div>
+</body>
+</html>
